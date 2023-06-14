@@ -1,0 +1,13 @@
+
+<br>
+<div class="developer-container">
+  <div *ngFor="let developer of developers" class="developer-card">
+    <img [src]="developer.image" alt="{{ developer.name }}" width="200">
+    <div class="developer-details">
+      <h2>{{ developer.name }}</h2>
+      <p><strong>Role:</strong> {{ developer.role }}</p>
+      <p><strong>Contact:</strong> {{ developer.contact }}</p>
+      <p>{{ developer.description }}</p>
+    </div>
+  </div>
+</div>

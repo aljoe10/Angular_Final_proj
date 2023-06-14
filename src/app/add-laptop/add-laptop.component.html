@@ -1,0 +1,27 @@
+<div class="container">
+    <h4>Add Laptops</h4>
+    <br>
+    <div class="form-group">
+      <label for="laptopName">Name of the Laptop</label>
+      <input type="text" class="form-control" id="laptopName" [(ngModel)]="addLaptop.LName" placeholder="Laptop Name">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="laptopProcessor">Processor of the Laptop</label>
+      <input type="text" class="form-control" id="laptopProcessor" [(ngModel)]="addLaptop.Processor" placeholder="Laptop Processor">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="laptopColor">Laptop Color</label>
+      <input type="text" class="form-control" id="laptopColor" [(ngModel)]="addLaptop.Color" placeholder="Laptop Color">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="laptopPrice">Laptop Price</label>
+      <input type="number" class="form-control" id="laptopPrice" [(ngModel)]="addLaptop.Lprice" placeholder="Laptop Price">
+    </div>
+    <br>
+    <button class="btn btn-primary" (click)="AddLaptop()">Add Laptop</button>
+  </div>
+
+  

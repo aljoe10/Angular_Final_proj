@@ -1,0 +1,16 @@
+<div class="container">
+    <h4>Click here to display all the laptops</h4>
+    <button class="btn btn-primary" (click)="viewAllLaptops()">View All Laptops</button>
+  </div>
+  
+  <div class="container mt-4">
+    <div class="card" *ngFor="let i of allLaptops">
+      <div class="card-body">
+        <h5 class="card-title">{{i.lId}} - {{ i.lName }}</h5>
+        <p class="card-text">Processor: {{ i.processor }}</p>
+        <p class="card-text">Color: {{ i.color }}</p>
+        <p class="card-text">Lprice: {{ i.lprice }}</p>
+      </div>
+    </div>
+  </div>
+  

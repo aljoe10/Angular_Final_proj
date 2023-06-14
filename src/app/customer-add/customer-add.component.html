@@ -1,0 +1,4 @@
+<input type="text" placeholder="Enter the Name" #nameInput> <br><br>
+<input type="number" placeholder="Enter the Age" #ageInput><br><br>
+<input type="text" placeholder="Enter the Address" #addressInput><br><br>
+<button (click)="addCustomer(nameInput.value, ageInput.value, addressInput.value); nameInput.value=''; ageInput.value=''; addressInput.value='';">Add Customer</button>

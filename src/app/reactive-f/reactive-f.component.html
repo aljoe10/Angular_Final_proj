@@ -1,0 +1,75 @@
+<div class="header">
+    <h3>Login Form</h3>
+    <br>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="form-container">
+    <div class="form-group">
+      <label for="name">Name<span class="mandatory">*</span>:</label>
+      <input type="text" id="name" formControlName="name" class="form-control">
+      <div class="error-message" *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched">
+        Name is required.
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="email">Email<span class="mandatory">*</span>:</label>
+      <input type="email" id="email" formControlName="email" class="form-control">
+      <div class="error-message" *ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched">
+        Invalid email.
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="phone">Phone<span class="mandatory">*</span>:</label>
+      <input type="text" id="phone" formControlName="phone" class="form-control">
+      <div class="error-message" *ngIf="myForm.get('phone')?.invalid && myForm.get('phone')?.touched">
+        Invalid phone number.
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="address">Address<span class="mandatory">*</span>:</label>
+      <textarea id="address" formControlName="address" class="form-control"></textarea>
+      <div class="error-message" *ngIf="myForm.get('address')?.invalid && myForm.get('address')?.touched">
+        Address is required.
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="gender">Gender<span class="mandatory">*</span>:</label>
+      <select id="gender" formControlName="gender" class="form-control">
+        <option value="">Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <div class="error-message" *ngIf="myForm.get('gender')?.invalid && myForm.get('gender')?.touched">
+        Gender is required.
+      </div>
+    </div>
+
+
+    <label>
+        Profile Image:
+        <input type="file" (change)="onProfileImageChange($event)" accept="image/*">
+      </label>
+      
+    <button type="submit" [disabled]="myForm.invalid" class="submit-button">Submit</button>
+  </form>
+</div>
+<div>
+
+  <div class="gen form" *ngIf="submitted">
+    <h3>Form Submitted</h3>
+    <div class="card-body">
+      <div class="details">
+      <div *ngIf="showMessage" >
+        <p><strong>Name:</strong> {{ submittedDetails.name }}</p>
+        <p><strong>Email:</strong> {{ submittedDetails.email }}</p>
+        <p><strong>Phone No.:</strong> {{ submittedDetails.phone }}</p>
+        <p><strong>Address:</strong> {{ submittedDetails.address }}</p>
+        <p><strong>Gender:</strong> {{ submittedDetails.gender }}</p>
+    </div>
+    <div class="avatar">
+        <img [src]="submittedDetails.profileImage" alt="Profile Image">
+      </div>
+    </div>

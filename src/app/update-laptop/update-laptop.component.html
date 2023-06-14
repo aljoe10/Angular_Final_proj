@@ -1,0 +1,28 @@
+<div class="container">
+    <h4>Update the Laptop</h4>
+    <br>
+    <div class="form-group">
+      <input type="number" class="form-control" [(ngModel)]="LId" placeholder="Enter id">
+    </div>
+    <br>
+    <div class="form-group">
+      <input type="text" class="form-control" [(ngModel)]="addLaptop.LName" placeholder="Laptop Name">
+    </div>
+    <br>
+    <div class="form-group">
+      <input type="text" class="form-control" [(ngModel)]="addLaptop.Processor" placeholder="Laptop Processor">
+    </div>
+    <br>
+    <div class="form-group">
+      <input type="text" class="form-control" [(ngModel)]="addLaptop.Color" placeholder="Laptop Color">
+    </div>
+    <br>
+    <div class="form-group">
+      <input type="number" class="form-control" [(ngModel)]="addLaptop.Lprice" placeholder="Laptop Price">
+    </div>
+    <br>
+    <div class="form-group">
+      <button class="btn btn-primary" (click)="updateLaptop()">Update</button>
+    </div>
+  </div>
+  
