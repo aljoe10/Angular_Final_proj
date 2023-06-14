@@ -1,27 +1,24 @@
-# Componentcom
+Angular Project - Online Laptop Store
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+Consumption of API is performed with all the crud operations. The project contains various components which are routed to direct the users to explore the website.
 
-## Development server
+There are 4 components: Home page, Product Page, About Page and Login Page.
+--> The home page fetches the data and performs crud operations.
+--> The Product Page List out the Products of the online store in which functions such as pipes is done.
+--> The About page contains the owner details.
+--> The login page has a reactive form which has error validations.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+WEBSITE VIEW - 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Screenshot 2023-06-03 040002](https://github.com/aljoe10/Angular_Final_proj/assets/129954904/5c7139b4-f90d-4e0c-800f-3b374fa39377)
 
-## Build
+![Screenshot 2023-06-03 040144](https://github.com/aljoe10/Angular_Final_proj/assets/129954904/153194d6-149f-4882-9cb6-157a23ca1ba0)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![Screenshot 2023-06-03 040201](https://github.com/aljoe10/Angular_Final_proj/assets/129954904/814280f2-bb21-4586-a54b-ee830996adb1)
 
-## Running unit tests
+![Screenshot 2023-06-03 040227](https://github.com/aljoe10/Angular_Final_proj/assets/129954904/0b4fbbaa-f514-4b3c-9620-38dd898b1f98)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Screenshot 2023-06-03 040235](https://github.com/aljoe10/Angular_Final_proj/assets/129954904/e2b79e92-ee2e-478d-94cb-150e896b16ed)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Screenshot 2023-06-03 040310](https://github.com/aljoe10/Angular_Final_proj/assets/129954904/074dea7e-6d5f-4cc6-a7a5-4c43fce47350)
